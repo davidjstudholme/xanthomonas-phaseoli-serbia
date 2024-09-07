@@ -9,7 +9,22 @@
 */checkm_out
 */*.jsonl
 *.dmanifest
+*.fq
+*.fq.gz
+*.fastq
+*.fastq.gz
 
+
+### BLAST-related files
+*.nhr
+*.nin
+*.not
+*.nsq
+*.ntf
+*.nto
+*.ndb
+
+wget-log
 
 *quast_results/latest
 
