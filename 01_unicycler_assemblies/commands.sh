@@ -12,7 +12,8 @@ for i in  SRR24958746 SRR24958747 SRR24958748 SRR24958749 ; do echo $i; trim_gal
 #conda activate unicycler_env
 for i in  SRR24958746 SRR24958747 SRR24958748 SRR24958749 ; do echo $i;  ./unicycler-runner.py -1 $i"_1_val_1.fq.gz"  -2 $i"_2_val_2.fq.gz" -o $i.unicycler; done
 
-
+### Create symbolic links to resulting assemblies
+for i in   SRR24958746 SRR24958747 SRR24958748 SRR24958749; do echo $i; ln -s $i.unicycler/assembly.fasta $i.unicycler.assembly.fasta; done
 
 
 
